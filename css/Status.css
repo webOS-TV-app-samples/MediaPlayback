@@ -1,0 +1,29 @@
+.status {
+  display: -webkit-flex;
+  justify-content: center;
+}
+
+.status > div {
+  height: 10rem;
+  box-sizing: border-box;
+  margin: 0.2%;
+  padding: 0.5%;
+  border: 2px solid gray;
+  background-color: #262626;
+  justify-content: center;
+  align-items: center;
+}
+.ui {
+  width: 30vw;
+  overflow: -moz-hidden-unscrollable;
+}
+.mp {
+  width: 70vw;
+  overflow: auto;
+}
+.status > div > header {
+  background: #7202029a;
+  padding: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+}

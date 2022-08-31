@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MediaPlayer - Autoplay</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/Status.css" />
+    <link rel="stylesheet" href="css/Player.css" />
+    <link rel="stylesheet" href="css/SnackBar.css" />
+    <!-- Shaka Player ui compiled library default CSS: -->
+    <script src="lib/shaka/shaka-player.compiled.js"></script>
+    <!-- Your application source: -->
+    <script type="text/javascript" src="js/AppLog.js"></script>
+    <script type="text/javascript" src="js/ErrorCode.js"></script>
+    <script type="text/javascript" src="js/Toast.js"></script>
+    <script type="text/javascript" src="js/Status.js"></script>
+    <script type="text/javascript" src="js/Util.js"></script>
+    <script type="text/javascript" src="js/MediaData.js"></script>
+    <script type="text/javascript" src="js/MediaPlayer.js"></script>
+    <script type="text/javascript" src="js/MediaPlayerUI.js"></script>
+    <script type="text/javascript" src="lib/spatial_navigation.js"></script>
+    <script
+      type="text/javascript"
+      src="lib/webOSTVjs-1.2.4/webOSTV.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main_container">
+      <header>Media Player</header>
+      <div class="status">
+        <div class="mp">
+          <header>Player</header>
+          <span>Status: <span class="mp_status">-</span></span>
+          <div>Error: <span class="mp_error">-</span></div>
+        </div>
+        <div class="ui">
+          <header>UI</header>
+          <span>Status: <span class="ui_status">Loading...</span></span>
+        </div>
+      </div>
+      <div class="player_container">
+        <div class="url_input">
+          <span
+            >URL:
+            <span class="mp_url" id="InputUrl" length="20"
+              >https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd</span
+            ></span
+          >
+        </div>
+        <div class="player">
+          <div class="side">
+            <header>Dash URLs</header>
+            <div class="control ctrl" tabindex="0" id="Dash-1">Dash-1</div>
+            <div class="control ctrl" tabindex="0" id="Dash-2">Dash-2</div>
+            <div class="control ctrl" tabindex="0" id="Dash-Err-1">
+              Dash Err-1
+            </div>
+            <div class="control ctrl" tabindex="0" id="Dash-Err-2">
+              Dash Err-2
+            </div>
+          </div>
+          <div class="video_wrapper" id="video_wrapper">
+            <video id="video" autoplay controls></video>
+          </div>
+          <div class="side">
+            <header>HLS URLs</header>
+            <div class="control ctrl" tabindex="0" id="HLS-1">HLS-1</div>
+            <div class="control ctrl" tabindex="0" id="HLS-2">HLS-2</div>
+            <div class="control ctrl" tabindex="0" id="HLS-Err-1">
+              HLS Err-1
+            </div>
+            <div class="control ctrl" tabindex="0" id="HLS-Err-2">
+              HLS Err-2
+            </div>
+          </div>
+        </div>
+        <div class="bottom_control">
+          <div id="snackbar">Error Message..</div>
+          <div class="playcontrols">
+            <img
+              class="control ctrl imgStyle"
+              id="Rewind"
+              src="icons/rewind.png"
+              alt="rewind"
+            />
+            <img
+              class="control ctrl imgStyle"
+              id="Play"
+              src="icons/play.png"
+              alt="play"
+            />
+            <img
+              class="control ctrl imgStyle"
+              id="Pause"
+              src="icons/pause.png"
+              alt="pause"
+            />
+            <img
+              class="control ctrl imgStyle"
+              id="Stop"
+              src="icons/stop.png"
+              alt="stop"
+            />
+            <img
+              class="control ctrl imgStyle"
+              id="Forward"
+              src="icons/forward.png"
+              alt="forward"
+            />
+            <img
+              class="control ctrl imgStyle"
+              id="Fullscreen"
+              src="icons/fullscreen.png"
+              alt="fullscreen"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

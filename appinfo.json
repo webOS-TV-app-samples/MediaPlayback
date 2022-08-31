@@ -1,0 +1,11 @@
+{
+  "id": "com.sample.mediaplayback",
+  "version": "1.0.0",
+  "vendor": "LG Developer",
+  "type": "web",
+  "main": "index.html",
+  "title": "Media Player",
+  "icon": "icon.png",
+  "disableBackHistoryAPI": true,
+  "uiRevision": 3
+}
