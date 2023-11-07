@@ -29,49 +29,38 @@
       <header>Media Player</header>
       <div class="status">
         <div class="mp">
-          <header>Player</header>
+          <!--<header>Player</header>
           <span>Status: <span class="mp_status">-</span></span>
-          <div>Error: <span class="mp_error">-</span></div>
+          <div>Error: <span class="mp_error">-</span></div>-->
         </div>
         <div class="ui">
-          <header>UI</header>
-          <span>Status: <span class="ui_status">Loading...</span></span>
+          <!--<header>UI</header>
+          <span>Status: <span class="ui_status">Loading...</span></span>-->
         </div>
       </div>
       <div class="player_container">
-        <div class="url_input">
-          <span
-            >URL:
-            <span class="mp_url" id="InputUrl" length="20"
-              >https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd</span
-            ></span
-          >
-        </div>
+
         <div class="player">
           <div class="side">
-            <header>Dash URLs</header>
-            <div class="control ctrl" tabindex="0" id="Dash-1">Dash-1</div>
-            <div class="control ctrl" tabindex="0" id="Dash-2">Dash-2</div>
-            <div class="control ctrl" tabindex="0" id="Dash-Err-1">
-              Dash Err-1
-            </div>
-            <div class="control ctrl" tabindex="0" id="Dash-Err-2">
-              Dash Err-2
-            </div>
+            <header>CANAIS / FILMES / SERIES</header>
+            <div class="control ctrl" tabindex="0" id="CANAL1">CANAL1</div>
+            <div class="control ctrl" tabindex="0" id="CANAL2">CANAL2</div>
+            <div class="control ctrl" tabindex="0" id="CANAL3">CANAL3</div>
+            <div class="control ctrl" tabindex="0" id="CANAL4">CANAL4</div>
+            <div class="control ctrl" tabindex="0" id="HLS-Err-1">HLS Err-1</div>
+            <div class="control ctrl" tabindex="0" id="HLS-Err-2">HLS Err-2</div>
+            <div class="control ctrl" tabindex="0" id="Dash-Err-1">Dash Err-1</div>
+            <div class="control ctrl" tabindex="0" id="Dash-Err-2">Dash Err-2</div>
           </div>
           <div class="video_wrapper" id="video_wrapper">
             <video id="video" autoplay controls></video>
+            <div class="url_input">
+              <span>Colocar oq ta tocando : <span class="mp_url" id="InputUrl" length="20"></span></span>
+            </div>
           </div>
           <div class="side">
-            <header>HLS URLs</header>
-            <div class="control ctrl" tabindex="0" id="HLS-1">HLS-1</div>
-            <div class="control ctrl" tabindex="0" id="HLS-2">HLS-2</div>
-            <div class="control ctrl" tabindex="0" id="HLS-Err-1">
-              HLS Err-1
-            </div>
-            <div class="control ctrl" tabindex="0" id="HLS-Err-2">
-              HLS Err-2
-            </div>
+            <header>Informações</header>
+
           </div>
         </div>
         <div class="bottom_control">

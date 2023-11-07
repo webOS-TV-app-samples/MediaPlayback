@@ -2,7 +2,7 @@ var MediaData = (function () {
   var uiStatus = "Loading...";
   var mpStatus = "Loading...";
   var mediaUrl =
-    "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd";
+    "http://pfsv.io:80/series/6005043031/56691/85915.mp4";
   var controlList = document.getElementsByClassName("control");
   var ctrlList = document.getElementsByClassName("ctrl");
 
@@ -16,41 +16,35 @@ var MediaData = (function () {
   var controlIds = [Rewind, Play, Pause, Stop, Forward, Fullscreen];
 
   var InputUrl = "InputUrl";
-  var Dash1 = "Dash-1";
-  var Dash2 = "Dash-2";
+  var CANAL1 = "CANAL1";
+  var CANAL2 = "CANAL2";
   var DashErr1 = "Dash-Err-1";
   var DashErr2 = "Dash-Err-2";
-  var HLS1 = "HLS-1";
-  var HLS2 = "HLS-2";
+  var CANAL3 = "CANAL3";
+  var CANAL4 = "CANAL4";
   var HLSErr1 = "HLS-Err-1";
   var HLSErr2 = "HLS-Err-2";
   var VideoWrapper = "video_wrapper";
   var defaultUrls = {
     /** Mapping of Dash Urls with Ids */
-    [Dash1]:
-      "https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd",
-    [Dash2]: "https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd",
-    [DashErr1]:
-      "http://media.developer.dolby.com/DolbyVision_Atmos/profile8.1_DASH/p8.1.mpd",
-    [DashErr2]:
-      "https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd",
+    [CANAL1]:"http://pfsv.io:80/6005043031/56691/324.ts",
+    [CANAL2]:"http://pfsv.io:80/movie/6005043031/56691/1904.mp4",
+    [DashErr1]:"http://media.developer.dolby.com/DolbyVision_Atmos/profile8.1_DASH/p8.1.mpd",
+    [DashErr2]:"http://pfsv.io:80/movie/6005043031/56691/1904.mp4",
 
     /** Mapping of HLS Urls with Ids */
-    [HLS1]:
-      "https://storage.googleapis.com/shaka-demo-assets/angel-one-hls-apple/master.m3u8",
-    [HLS2]:
-      "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8",
-    [HLSErr1]: "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
-    [HLSErr2]:
-      "https://akamai-axtest.akamaized.net/routes/lapd-v1-acceptance/www_c4/Manifest.m3u8",
+    [CANAL3]:"http://pfsv.io:80/series/6005043031/56691/5847.mp4",
+    [CANAL4]:"http://pfsv.io:80/series/6005043031/56691/85915.mp4",
+    [HLSErr1]:"https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8",
+    [HLSErr2]:"https://akamai-axtest.akamaized.net/routes/lapd-v1-acceptance/www_c4/Manifest.m3u8",
   };
-  var urlIds = [Dash1, Dash2, DashErr1, DashErr2, HLS1, HLS2, HLSErr1, HLSErr2];
+  var urlIds = [CANAL1, CANAL2, CANAL3, CANAL4, DashErr1, DashErr2, HLSErr1, HLSErr2];
 
   return {
     controlIds,
     controlList,
     ctrlList,
-    Dash1,
+    CANAL1,
     defaultUrls,
     InputUrl,
     mediaUrl,
